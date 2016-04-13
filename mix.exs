@@ -4,6 +4,8 @@ defmodule CampMinder.Mixfile do
   def project do
     [app: :campminder,
      version: "0.0.1",
+     description: "A CampMinder API library for Elixir.",
+     package: package,
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
@@ -46,6 +48,14 @@ defmodule CampMinder.Mixfile do
       {:timex, "~> 2.1"},
       {:ex_doc, "~> 0.11.4", only: :dev},
       {:exvcr, "~> 0.7", only: :test}
+    ]
+  end
+
+  def package do
+    [
+      maintainers: ["Andrew Anderson"],
+      licenses: ["New BSD"],
+      links: %{"GitHub" => "https://github.com/GimliLongBow/campminder-elixir"}
     ]
   end
 end
