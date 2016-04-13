@@ -1,15 +1,38 @@
 defmodule CampMinder do
   @moduledoc """
   An HTTP client for CampMinder.
+  https://webapi.campminder.com/help
   """
 
   use Application
+  use HTTPoison.Base
+
+  @endpoint "https://webapi.campminder.com"
 
   @doc """
   http://elixir-lang.org/docs/stable/elixir/Application.html
   """
   def start(_type, _args) do
     CampMinder.Supervisor.start_link()
+  end
+
+  @doc """
+  Prepend the CampMinder API URL to each request:
+  """
+  def process_url(url) do
+    @endpoint <> url
+  end
+
+  @doc """
+  Decode and convert the body into a keyword list.
+  ERROR: This should be cleaner but the get_id_success test fails if it isn't broken into two steps...
+  """
+  def process_response_body(body) do
+    #body_decoded = body |> Poison.decode!
+    #body_decoded |> Enum.map(fn({k, v}) -> {String.to_atom(k), v} end)
+    body
+    |> Poison.decode!
+    |> Enum.map(fn({k, v}) -> {String.to_atom(k), v} end)
   end
 
   @doc """
@@ -20,7 +43,7 @@ defmodule CampMinder do
     # Get the current time formatted appropriately.
     {:ok, now} = Timex.DateTime.now |> Timex.format("{ISOz}")
     # Hash it through SHA1.
-    hash = :crypto.hash(:sha, "#{camp_id}#{now}#{token}") |> Base.encode16
+    hash = :crypto.hash(:sha, "#{camp_id}#{now}#{token}") |> Base.encode16 |> String.downcase
     # Return a string with the camp ID, current time, and SHA1 hash together.
     "#{camp_id}#{now}#{hash}"
   end

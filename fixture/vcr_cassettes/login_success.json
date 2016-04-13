@@ -1,0 +1,31 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Content-type": "application/javascript"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://webapi.campminder.com/api/security/user/GetRemoteLoginRedirect?apikey=1952016-04-13T11%3A13%3A15.273Z31fc316496e609c3b673e090d8a242150acce311&c=2&i=nobody%40testing.com&p=none1234"
+    },
+    "response": {
+      "body": "{\"Result\":{\"ClientID\":668,\"PersonID\":7772574,\"RedirectUrl\":\"https://greenleaf.campintouch.com/v2/login/apitokenlogin.aspx?token=494de77f-63db-49ee-92a2-6b38527f3ce0\"},\"Success\":true,\"ErrorText\":null}",
+      "headers": {
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+        "Content-Type": "application/javascript; charset=utf-8",
+        "Expires": "-1",
+        "Server": "Microsoft-IIS/7.5",
+        "X-AspNet-Version": "4.0.30319",
+        "srv": "spruce",
+        "Date": "Wed, 13 Apr 2016 11:13:14 GMT",
+        "Connection": "close",
+        "Content-Length": "199"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

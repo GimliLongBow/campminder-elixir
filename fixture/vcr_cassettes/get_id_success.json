@@ -1,0 +1,32 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization-Token": "1952016-04-13T11:24:49.445Z79f7a318780577caee3a4bb9040277a2d83ffa76",
+        "Content-type": "application/javascript"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://webapi.campminder.com/api/entity/person/getpersonidfromemail?email=nobody@testing.com"
+    },
+    "response": {
+      "body": "{\"Result\":7772574,\"Success\":true,\"ErrorText\":null}",
+      "headers": {
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+        "Content-Type": "application/javascript; charset=utf-8",
+        "Expires": "-1",
+        "Server": "Microsoft-IIS/7.5",
+        "X-AspNet-Version": "4.0.30319",
+        "srv": "spruce",
+        "Date": "Wed, 13 Apr 2016 11:24:49 GMT",
+        "Connection": "close",
+        "Content-Length": "50"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

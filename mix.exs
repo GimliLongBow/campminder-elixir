@@ -44,7 +44,8 @@ defmodule CampMinder.Mixfile do
       {:hackney, "~> 1.5" },
       {:poison, "~> 2.1.0"},
       {:timex, "~> 2.1"},
-      {:ex_doc, "~> 0.11.4", only: :dev}
+      {:ex_doc, "~> 0.11.4", only: :dev},
+      {:exvcr, "~> 0.7", only: :test}
     ]
   end
 end

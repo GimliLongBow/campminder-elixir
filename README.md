@@ -4,13 +4,16 @@ A [CampMinder API](https://webapi.campminder.com/help) integration for use in El
 
 ## Current capabilities
 
+- User login!
+- User ID retrieval by email.
+- API key generation
+
 TODO:
 
 - Add New Lead
 - Add Custom Data
 - Get Telegraph reports
 - Run Telegraph report
-- Retrieve person ID by email
 
 ## Installation
 
