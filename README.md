@@ -7,13 +7,14 @@ A [CampMinder API](https://webapi.campminder.com/help) integration for use in El
 - User login!
 - User ID retrieval by email.
 - API key generation
+- Add New Lead
 
 TODO:
 
-- Add New Lead
 - Add Custom Data
 - Get Telegraph reports
 - Run Telegraph report
+- Implement more of the CM API
 
 ## Installation
 
@@ -21,7 +22,7 @@ Add `campminder` to your list of dependencies in `mix.exs`:
 
 ```
 def deps do
-  [{:campminder, "~> 0.0.1"}]
+  [{:campminder, "~> 0.1"}]
 end
 ```
 
@@ -44,7 +45,3 @@ use Mix.Config
 config :campminder, camp_id: :value
 config :campminder, token: :value
 ```
-
-## Planning Qs:
-
-How to set the ID and token globally for the application? Set it up as an application!
