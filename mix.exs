@@ -3,7 +3,7 @@ defmodule CampMinder.Mixfile do
 
   def project do
     [app: :campminder,
-     version: "0.0.1",
+     version: "0.1",
      description: "A CampMinder API library for Elixir.",
      package: package,
      elixir: "~> 1.2",
