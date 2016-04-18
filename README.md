@@ -1,4 +1,4 @@
-# campminder-elixir
+# campminder-elixir [![Build Status](https://travis-ci.org/GimliLongBow/campminder-elixir.svg?branch=master)](https://travis-ci.org/GimliLongBow/campminder-elixir)
 
 A [CampMinder API](https://webapi.campminder.com/help) integration for use in Elixir.
 
