@@ -3,16 +3,15 @@
     "request": {
       "body": "",
       "headers": {
-        "Authorization-Token": "1952016-04-13T11:24:49.445Z79f7a318780577caee3a4bb9040277a2d83ffa76",
         "Content-type": "application/javascript"
       },
       "method": "get",
       "options": [],
       "request_body": "",
-      "url": "https://webapi.campminder.com/api/entity/person/getpersonidfromemail?email=nobody@testing.com"
+      "url": "https://webapi.campminder.com/api/security/user/GetRemoteLoginRedirect?apikey=1952016-04-18T13%3A20%3A23.378Z26929b3fb621fce3660edbc16ef8fbdcfc18e8db&c=2&i=nobody%40testing.com&p=none1234"
     },
     "response": {
-      "body": "{\"Result\":7772574,\"Success\":true,\"ErrorText\":null}",
+      "body": "{\"Result\":{\"ClientID\":668,\"PersonID\":7772574,\"RedirectUrl\":\"https://greenleaf.campintouch.com/v2/login/apitokenlogin.aspx?token=76020e8a-d2b8-4173-af00-6fb995d07f90\"},\"Success\":true,\"ErrorText\":null}",
       "headers": {
         "Cache-Control": "no-cache",
         "Pragma": "no-cache",
@@ -20,10 +19,9 @@
         "Expires": "-1",
         "Server": "Microsoft-IIS/7.5",
         "X-AspNet-Version": "4.0.30319",
-        "srv": "spruce",
-        "Date": "Wed, 13 Apr 2016 11:24:49 GMT",
+        "Date": "Mon, 18 Apr 2016 13:20:23 GMT",
         "Connection": "close",
-        "Content-Length": "50"
+        "Content-Length": "199"
       },
       "status_code": 200,
       "type": "ok"

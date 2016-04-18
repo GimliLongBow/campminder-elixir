@@ -1,0 +1,31 @@
+[
+  {
+    "request": {
+      "body": "{\"LeadSource\":\"Testing\",\"LeadDate\":\"\",\"Household2\":{},\"Household1\":{\"Phone\":\"555-555-2323\",\"Parent1\":{\"LoginEmail\":\"mary@doe.com\",\"LastName\":\"Doe\",\"FirstName\":\"Mary\"}},\"Camper\":{\"LoginEmail\":\"jane@doe.com\",\"LastName\":\"Doe\",\"FirstName\":\"Jane\"}}",
+      "headers": {
+        "Authorization-Token": "1952016-04-18T13:18:34.079Za5c483b1911fd001345824dd143e9b2ee3574130",
+        "Content-Type": "application/javascript"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://webapi.campminder.com/api/entity/person/camper/camper/addnewcamper"
+    },
+    "response": {
+      "body": "{\"Result\":{\"Household1\":{\"ID\":3055027,\"Parent1ID\":7790042,\"Parent2ID\":null},\"Household2\":null,\"CamperID\":7790043},\"Success\":true,\"ErrorText\":null}",
+      "headers": {
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+        "Content-Type": "application/javascript; charset=utf-8",
+        "Expires": "-1",
+        "Server": "Microsoft-IIS/7.5",
+        "X-AspNet-Version": "4.0.30319",
+        "Date": "Mon, 18 Apr 2016 13:18:33 GMT",
+        "Connection": "close",
+        "Content-Length": "146"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

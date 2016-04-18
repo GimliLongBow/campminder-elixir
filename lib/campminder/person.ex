@@ -1,9 +1,9 @@
 defmodule CampMinder.Person do
   @moduledoc """
-  Person management.
+  Person struct and management.
   """
 
-  require IEx
+  defstruct FirstName: "", LastName: "", LoginEmail: ""
 
   @doc """
   Returns a login token for remote login capabilities.

@@ -8,10 +8,10 @@
       "method": "get",
       "options": [],
       "request_body": "",
-      "url": "https://webapi.campminder.com/api/security/user/GetRemoteLoginRedirect?apikey=1952016-04-13T11%3A13%3A14.181Z06e6b690a7f37ebf99208444687b6d5258a011de&c=2&i=nobody%40testing.com&p=none1234"
+      "url": "https://webapi.campminder.com/api/security/user/GetRemoteLoginRedirect?apikey=1952016-04-18T13%3A20%3A22.750Z1ee00726282a92b3d9ee3cf908d44cabd0c3c807&c=2&i=nobody%40testing.com&p=none1234"
     },
     "response": {
-      "body": "{\"Result\":{\"ClientID\":668,\"PersonID\":7772574,\"RedirectUrl\":\"https://greenleaf.campintouch.com/v2/login/apitokenlogin.aspx?token=348a020d-3b06-4ce6-92a9-a66ba6895d03\"},\"Success\":true,\"ErrorText\":null}",
+      "body": "{\"Result\":{\"ClientID\":668,\"PersonID\":7772574,\"RedirectUrl\":\"https://greenleaf.campintouch.com/v2/login/apitokenlogin.aspx?token=e8622e12-3e3a-4af4-b69a-f26b1400e2e7\"},\"Success\":true,\"ErrorText\":null}",
       "headers": {
         "Cache-Control": "no-cache",
         "Pragma": "no-cache",
@@ -20,7 +20,7 @@
         "Server": "Microsoft-IIS/7.5",
         "X-AspNet-Version": "4.0.30319",
         "srv": "spruce",
-        "Date": "Wed, 13 Apr 2016 11:13:14 GMT",
+        "Date": "Mon, 18 Apr 2016 13:20:22 GMT",
         "Connection": "close",
         "Content-Length": "199"
       },
