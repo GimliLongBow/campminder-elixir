@@ -25,11 +25,8 @@ defmodule CampMinder do
 
   @doc """
   Decode and convert the body into a keyword list.
-  ERROR: This should be cleaner but the get_id_success test fails if it isn't broken into two steps...
   """
   def process_response_body(body) do
-    #body_decoded = body |> Poison.decode!
-    #body_decoded |> Enum.map(fn({k, v}) -> {String.to_atom(k), v} end)
     body
     |> Poison.decode!
     |> Enum.map(fn({k, v}) -> {String.to_atom(k), v} end)
@@ -61,4 +58,17 @@ defmodule CampMinder do
   def token do
     Application.get_env(:campminder, :token) || System.get_env "CAMPMINDER_TOKEN"
   end
+
+
+  @doc """
+  Converts the result to a more Elixir-normalized format.
+  """
+  def convert_result({:ok, resp}) do
+    if resp.body[:Success] == true do
+      {:ok, resp}
+    else
+      {:error, resp}
+    end
+  end
+
 end

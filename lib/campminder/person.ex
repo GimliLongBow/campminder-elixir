@@ -23,7 +23,7 @@ defmodule CampMinder.Person do
       headers,
       params: body
     )
-    |> check_success
+    |> CampMinder.convert_result
   end
 
   @doc """
@@ -39,19 +39,7 @@ defmodule CampMinder.Person do
       "/api/entity/person/getpersonidfromemail?email=#{email}",
       headers
     )
-    |> check_success
+    |> CampMinder.convert_result
   end
-
-  defp check_success({:ok, resp}) do
-    if resp.body[:Success] == true do
-      {:ok, resp}
-    else
-      {:error, resp}
-    end
-  end
-
-  # defp adjust_response(resp) when: resp[:Success] == false do
-  #   {:error, resp}
-  # end
 
 end

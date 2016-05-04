@@ -1,0 +1,32 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization-Token": "12016-05-04T03:01:29.121Z0da0e85f3e64b411810ae5f887712be71fb9eb02",
+        "Content-type": "application/javascript"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://webapi.campminder.com/api/entity/CustomField/GetFieldDefs?FieldIDs=113621&Since="
+    },
+    "response": {
+      "body": "{\"Result\":[{\"ID\":113621,\"Name\":\"Preferred Contact\",\"Partition\":8,\"EntityType\":1,\"DataType\":1,\"DefaultValue\":null,\"IsSeasonal\":false,\"IsArray\":false,\"IsActive\":true,\"Version\":2332133509054857216,\"Options\":[],\"TimeStamp\":{\"Created\":{\"PersonID\":null,\"DateTime\":null},\"Modified\":{\"PersonID\":null,\"DateTime\":null},\"Archived\":null}}],\"Success\":true,\"ErrorText\":null}",
+      "headers": {
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+        "Content-Type": "application/javascript; charset=utf-8",
+        "Expires": "-1",
+        "Server": "Microsoft-IIS/7.5",
+        "X-AspNet-Version": "4.0.30319",
+        "srv": "spruce",
+        "Date": "Wed, 04 May 2016 03:01:29 GMT",
+        "Connection": "close",
+        "Content-Length": "360"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
