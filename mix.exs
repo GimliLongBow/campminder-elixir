@@ -42,12 +42,12 @@ defmodule CampMinder.Mixfile do
 
   defp deps(:prod) do
     [
-      {:httpoison, "~> 0.8.2" },
-      {:hackney, "~> 1.5" },
-      {:poison, "~> 2.1.0"},
-      {:timex, "~> 2.1"},
-      {:ex_doc, "~> 0.11.4", only: :dev},
-      {:exvcr, "~> 0.7", only: :test}
+      {:httpoison, "~> 0.9" },
+      {:hackney, "~> 1.6" },
+      {:poison, "~> 2.2.0"},
+      {:timex, "~> 3.0"},
+      {:ex_doc, "~> 0.13", only: :dev},
+      {:exvcr, "~> 0.8", only: :test}
     ]
   end
 

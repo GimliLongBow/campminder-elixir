@@ -8,7 +8,7 @@ defmodule APIKeyTest do
 
     on_exit fn ->
       Application.delete_env(:campminder, :camp_id)
-      Application.delete_env(:campminder, :token) 
+      Application.delete_env(:campminder, :token)
     end
   end
 
@@ -17,7 +17,7 @@ defmodule APIKeyTest do
   end
 
   test "includes current time stamp" do
-    {:ok, now} = Timex.DateTime.now |> Timex.format("%Y-%m-%dT%H:%M:%S", :strftime)
+    {:ok, now} = DateTime.utc_now |> Timex.format("%Y-%m-%dT%H:%M:%S", :strftime)
     assert String.contains?(CampMinder.api_key, now) == true
   end
 end

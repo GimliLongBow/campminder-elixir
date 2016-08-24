@@ -38,7 +38,7 @@ defmodule CampMinder do
   """
   def api_key do
     # Get the current time formatted appropriately.
-    {:ok, now} = Timex.DateTime.now |> Timex.format("{ISOz}")
+    {:ok, now} = DateTime.utc_now |> Timex.format("{ISO:Extended:Z}")
     # Hash it through SHA1.
     hash = :crypto.hash(:sha, "#{camp_id}#{now}#{token}") |> Base.encode16 |> String.downcase
     # Return a string with the camp ID, current time, and SHA1 hash together.
